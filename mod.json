@@ -1,6 +1,6 @@
 {
-	"name": "Default",
-	"description": "Default Description for Mod",
+	"name": "Highlighter",
+	"description": "Highlights specific items in the world depending on what you are looking for.",
 	"version": "1.0.0",
 	"author": "Garrett Emrick",
 	"compatible_minor_versions": [
@@ -8,9 +8,12 @@
 	],
 	"unloadable": true,
 	"files": [
-		"helloworld.js"
+		"highlighter.js"
 	],
 	"hooks": [
-		
+		"OnAddOrUpdateInventoryItem",
+		"OnBuild",
+		"PreRenderWorld",
+		"OnMouseDown"
 	]
 }
